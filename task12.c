@@ -16,10 +16,6 @@ void _pstr(stack_t **doubly, unsigned int cline)
 
 	while (aux && aux->n > 0 && aux->n < 128)
 	{
-		if (aux->n == 0)
-		{
-			break;
-		}
 		printf("%c", aux->n);
 		aux = aux->next;
 	}
