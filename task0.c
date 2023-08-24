@@ -16,7 +16,7 @@ void _push(stack_t **doubly, unsigned int cline)
 	if (!vglo.arg)
 	{
 		dprintf(2, "L%u: ", cline);
-		dprintf(2, "usage: push\n");
+		dprintf(2, "usage: push integer\n");
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
@@ -26,7 +26,7 @@ void _push(stack_t **doubly, unsigned int cline)
 		if (!isdigit(vglo.arg[j]) && vglo.arg[j] != '-')
 		{
 			dprintf(2, "L%u: ", cline);
-			dprintf(2, "usage: push\n");
+			dprintf(2, "usage: push integer\n");
 			free_vglo();
 			exit(EXIT_FAILURE);
 		}

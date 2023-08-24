@@ -15,7 +15,7 @@ void _pop(stack_t **doubly, unsigned int cline)
 
 	if (doubly == NULL || *doubly == NULL)
 	{
-		dprintf(2, "L%u: ERROR: Stack empty\n", cline);
+		dprintf(2, "L%u: can't pop an empty stack\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}

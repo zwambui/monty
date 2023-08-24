@@ -15,7 +15,7 @@ void _pint(stack_t **doubly, unsigned int cline)
 	if (*doubly == NULL)
 	{
 		dprintf(2, "L%u: ", cline);
-		dprintf(2, "ERROR:Stack is empty\n");
+		dprintf(2, "can't pint, stack empty\n");
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
