@@ -20,7 +20,7 @@ void _sub(stack_t **head, unsigned int cline)
 
 	if (m < 2)
 	{
-		dprintf(2, "L%u: ERROR:Stack too short\n", cline);
+		dprintf(2, "L%u: can't sub, stack too short\n", cline);
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
