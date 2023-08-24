@@ -6,7 +6,7 @@ global_t vglo;
 /**
  * free_vglo - frees the global variables
  *
- * Return: NULL
+ * Return: no return
  */
 
 void free_vglo(void)
@@ -21,7 +21,7 @@ void free_vglo(void)
  *
  * @fd: file descriptor
  *
- * Return: NULL
+ * Return: no return
  */
 
 void start_vglo(FILE *fd)
@@ -50,7 +50,7 @@ FILE *check_input(int argc, char *argv[])
 
 	if (argc == 1 || argc > 2)
 	{
-		dprintf(2, "USAGE: Monty File\n");
+		dprintf(2, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 
@@ -58,7 +58,7 @@ FILE *check_input(int argc, char *argv[])
 
 	if (fd == NULL)
 	{
-		dprintf(2, "Error: Cannot open file %s\n", argv[1]);
+		dprintf(2, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 
@@ -71,7 +71,7 @@ FILE *check_input(int argc, char *argv[])
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Always 0
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv[])
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 			if (!f)
 			{
 				dprintf(2, "L%u: ", vglo.cont);
-				dprintf(2, "UNKNOWN %s\n", lines[0]);
+				dprintf(2, "unknown instruction %s\n", lines[0]);
 				free_vglo();
 				exit(EXIT_FAILURE);
 			}

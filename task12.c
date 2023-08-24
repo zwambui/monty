@@ -5,8 +5,10 @@
  *
  * @doubly: head of the linked list
  * @cline: line number;
+ *
  * Return: no return
  */
+
 void _pstr(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux;
