@@ -19,16 +19,15 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number)
 		{"nop", _nop},
 		{"sub", _sub},
 		{"div", _div},
-		/**
-		*{"mul", _mul},
-		*{"mod", _mod},
-		*{"pchar", _pchar},
-		*{"pstr", _pstr},
-		*{"rotl", _rotl},
-		*{"rotr", _rotr},
-		*{"stack", _stack},
-		*{"queue", _queue},
-		*/
+		{"mul", _mul},
+		{"mod", _mod},
+		{"pchar", _pchar},
+		{"pstr", _pstr},
+		{"rotl", _rotl},
+		{"rotr", _rotr},
+		{"stack", _stack},
+		{"queue", _queue},
+		
 		{NULL, NULL}
 	};
 	int i;
